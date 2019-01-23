@@ -1,4 +1,10 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+from os import path
+from io import open
+
+here = path.abspath(path.dirname(__file__))
+
+
 setup(
     name='simpleOption',
     version='0.1.1',
@@ -13,7 +19,9 @@ setup(
         #   4 - Beta
         #   5 - Production/Stable
         'Development Status :: 3 - Alpha',
+        'Programming Language :: Python :: 3',
     ],
     keywords=['options','python','finance'],
+    packages=find_packages(exclude=['contrib', 'docs', 'tests']), 
     install_requires=['parse','quantlib-python'],
 )

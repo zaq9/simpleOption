@@ -63,11 +63,12 @@ class Date(qb.Date):
 
 
 def sqDate(strSQDate):
-"""Returns :SQ_Date(qb.Date)
-Parameters 
+    """Returns :SQ_Date(qb.Date)
+    Parameters
     type1(monthly):  '02'
     type2(weekly) :  '02w3'
- """
+    """
+
     month = int(strSQDate[0:2])
     week = 2 if len(strSQDate) < 2 else int(strSQDate[-1])
     year = qb.Date.todaysDate().year()  # todo:check otherCase

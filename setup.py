@@ -7,7 +7,7 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name='simpleOption',
-    version='0.1.1',
+    version='0.1.2',
     description='Simple Option module(using QuantLib)',
     url='https://github.com/zaq9/simpleOption',
     author='zaq',

@@ -40,17 +40,16 @@ Example3:
 ---------
 #underlying & IV change: 20625>>20000 &IV=25%
 
-
-    ```python
-        op_price3 = o.v(20000, 25)
-        print(f"{o}@{op_price3:.2f} (nk=20000,IV=25%)  jan24")
-    
-        """
+```python
+    op_price3 = o.v(20000, 25)
+    print(f"{o}@{op_price3:.2f} (nk=20000,IV=25%)  jan24")
+    """
         OUTPUT 3
         ---------
         02/P20500@703.62 (nk=20000,IV=25%)  jan24
     """
-    ```
+```
+
 Example4
 ---------
 #use keyword

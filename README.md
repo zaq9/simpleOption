@@ -3,7 +3,7 @@ Simple Option module(using QuantLib)
 
 [Graph sample](https://github.com/zaq9/simpleOption/blob/master/example_graph.ipynb)
 
-If you have google account, you can run on Google Colaboratory.
+If you have google account, you can run it on Google Colaboratory.
 
 
 Example1:

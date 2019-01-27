@@ -1,8 +1,9 @@
 # simpleOption
 Simple Option module(using QuantLib)
 
-Graph sample:
-https://github.com/zaq9/simpleOption/blob/master/example_graph.ipynb
+[Graph sample](https://github.com/zaq9/simpleOption/blob/master/example_graph.ipynb)
+
+If you have google account, you can run on Google Colaboratory.
 
 
 Example1:

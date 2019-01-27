@@ -10,9 +10,12 @@ Example1:
 ---------
 ```python
     from simpleOption import *
-    #Simple Example
+    
+    #Simple Example (2月限P20500　1月24日時点での理論価格＠IV20.8）
+    
     o = Option('02/P20500')
     op_price = o.v(20625, 20.8, 20190124)
+    
     print(f"{o}@{op_price:.2f}  (nk=20625,IV=20.8%)  jan24 ")
     
     """

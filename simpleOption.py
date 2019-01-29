@@ -134,3 +134,5 @@ class Option(qb.EuropeanOption):
     def v(self, underlying=None, iv=None, evoluationDate=None):
         setting(underlying, iv, evoluationDate)
         return self.NPV()
+
+    def pay(self, underlying): return self.payoff(float(underlying))

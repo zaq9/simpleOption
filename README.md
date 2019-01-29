@@ -1,5 +1,5 @@
 # simpleOption
-Simple Option module(using QuantLib)
+Simple wrapper class for using QuantLib.
 
 [Graph sample](https://github.com/zaq9/simpleOption/blob/master/example_graph.ipynb)
 
@@ -9,10 +9,8 @@ If you have google account, you can run it on Google Colaboratory.
 Example1:
 ---------
 ```python
-    from simpleOption import *
-    
     #Simple Example (2月限P20500　1月24日時点での理論価格＠IV20.8）
-    
+    from simpleOption import *
     o = Option('02/P20500')
     op_price = o.v(20625, 20.8, 20190124)
     
@@ -28,11 +26,9 @@ Example2:
 ---------
 
 ```python
-    
     #underlying change: 20625 >>20500
     op_price2 = o.v(20500)
     print(f"{o}@{op_price2:.2f} (nk=20500,IV=20.8%)  jan24")
-    
     """
     OUTPUT 2
     ---------

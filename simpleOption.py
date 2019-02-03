@@ -136,3 +136,33 @@ class Option(qb.EuropeanOption):
         return self.NPV()
 
     def pay(self, underlying): return self.payoff(float(underlying))
+
+
+class Portfolio():
+    """簡単なポートフォリオクラス"""
+
+    def __init__(self, lines):
+        '''
+		:param lines: str
+
+		Example:
+		p = Portfolio(
+			"""
+				02/C21000[1]
+				02/C21250[-2]
+				02/C21500[1]
+			""")
+		'''
+        self.items = []
+        self.nums = []
+        for s in lines.strip().splitlines():
+            x = parse("{str_op}[{num:d}]", s.strip())
+            self.items.append(Option(x['str_op']))
+            self.nums.append(x['num'])
+
+    def v(self, underlying=None, iv=None, evoluationDate=None):
+        setting(underlying, iv, evoluationDate)
+        return sum(op.v() * num for op, num in zip(self.items, self.nums))
+
+    def pay(self, underlying):
+        return sum(op.pay(underlying) * num for op, num in zip(self.items, self.nums))

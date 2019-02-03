@@ -1,7 +1,7 @@
 # simpleOption
 Simple wrapper class for using QuantLib.
 
-[Graph sample](https://github.com/zaq9/simpleOption/blob/master/example_graph.ipynb)
+[Graph sample](https://colab.research.google.com/github/zaq9/simpleOption/blob/master/example/example_portfolio.ipynb)
 
 If you have google account, you can run it on Google Colaboratory.
 
